@@ -14,7 +14,7 @@ jobs:
           name: Gradle Build
           command: ./gradlew bootJar
       - persist_to_workspace:
-          root:
+          root: .
           paths:
             - build/libs/*.jar
 workflows:
